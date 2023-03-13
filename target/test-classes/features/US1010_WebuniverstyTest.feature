@@ -1,0 +1,18 @@
+Feature: Us1010 WebUniversity Testi
+  @wip
+  Scenario: TC14 Webuniversty sayfasinda istenen gorevleri yapar
+
+  Given kullanici "webUrl" anasayfaya gider
+    Then Login Portal" a kadar asagi iner
+    And Login Portal a tiklar
+    And acilan ikinci window a gecer
+    And username kutusuna  deger yazdirir
+    And  password kutusuna  deger yazdirir
+    And 4 saniye bekler
+    Then webuniversty login butonuna basar
+    And 2 saniye bekler
+    And Popup'ta cikan yazinin validation failed oldugunu test eder
+    And Ok diyerek Popup'i kapatir
+    Then Ilk sayfaya geri doner
+    And Ilk sayfaya donuldugunu test eder
+    And tum sayfayi kapatir
